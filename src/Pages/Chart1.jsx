@@ -42,11 +42,6 @@ import {
 import "./Chart.css";
 
 const Chart1 = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
   const [open, setOpen] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
 
