@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { select, scaleLinear, scaleBand, axisBottom, axisLeft, line } from "d3";
+// import { select, scaleLinear, scaleBand, axisBottom, axisLeft, line } from "d3";
 import Navbar from "./Pages/Navbar";
 import Home from "./Pages/Home";
 

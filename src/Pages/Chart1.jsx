@@ -32,12 +32,8 @@ import BarChart from "../Components/BarChart";
 import LineChart from "../Components/LineChart";
 import Other from "../Components/Other";
 import PieChart from "../Components/PieChart";
-import { Grid } from "@mui/material";
 import {
   Button,
-  Typography,
-  Menu,
-  MenuItem,
   Dialog,
   DialogTitle,
   DialogContent,
@@ -46,7 +42,6 @@ import {
 import "./Chart.css";
 
 const Chart1 = () => {
-  const [selectedMonth, setSelectedMonth] = useState("January");
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = event => {
@@ -75,29 +70,6 @@ const Chart1 = () => {
     }
     setOpen(false); // Close the dialog after handling the file upload
   };
-
-  const handleMonthChange = () => {
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-    const randomData = months.map(() => Math.random() * 50);
-    setChartData(randomData);
-  };
-
-  const [chartData, setChartData] = useState(
-    Array.from({ length: 12 }, () => Math.random() * 50)
-  );
 
   //   const data1 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"];
 
