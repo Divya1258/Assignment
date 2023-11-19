@@ -32,8 +32,8 @@
 .middleBlock {
   display: flex;
   flex-basis: 40%;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .middleBlock > input {
