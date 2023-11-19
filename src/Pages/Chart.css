@@ -1,0 +1,31 @@
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; /* Gap between charts */
+  margin: 20px;
+}
+
+.top-charts,
+.bottom-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* padding: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+}
+
+.chart:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.chart:nth-child(even) {
+  background-color: #eaeaea;
+}

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.left-section {
+  width: 15%;
+  /* Additional styling for the left section */
+}
+
+.right-section {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  /* Additional styling for the right section */
+}
+
+/* .chart {
+  width: calc(50% - 20px);
+  margin: 10px;
+  Additional styling for individual charts
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+} */

@@ -1,0 +1,34 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black; /* Add bottom border */
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.legend-container {
+  display: flex;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-color {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.chart-content {
+  padding-left: 20px;
+  /* Define any styles for the chart content here */
+}
