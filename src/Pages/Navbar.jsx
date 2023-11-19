@@ -15,7 +15,10 @@ const Navbar = () => {
       <section className="NavSection">
         <article>
           <div className="leftBlock">
-            <img src="https://www.finsmes.com/wp-content/uploads/2022/10/Assiduus_Global_Logo.jpeg" />
+            <img
+              src="https://www.finsmes.com/wp-content/uploads/2022/10/Assiduus_Global_Logo.jpeg"
+              alt=""
+            />
             {/* <h1>Doctor Care</h1> */}
           </div>
 
@@ -43,7 +46,10 @@ const Navbar = () => {
 
             <div onClick={handleClick} className="img">
               {/* <Link to=""> */}
-              <img src="https://tse1.explicit.bing.net/th?id=OIP.GHGGLYe7gDfZUzF_tElxiQHaHa&pid=Api&P=0&h=180" />
+              <img
+                src="https://tse1.explicit.bing.net/th?id=OIP.GHGGLYe7gDfZUzF_tElxiQHaHa&pid=Api&P=0&h=180"
+                alt=""
+              />
               {/* </Link> */}
             </div>
           </div>
@@ -56,12 +62,12 @@ const Navbar = () => {
               <li>
                 <a href="/signin">Sign In</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="">Sign Up</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="">Logout</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </article>

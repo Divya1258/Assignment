@@ -5,11 +5,7 @@ import * as d3 from "d3";
 const BarChart = ({ data }) => {
   const chartRef = useRef();
 
-  useEffect(() => {
-    drawChart();
-  }, [data]);
-
-  const drawChart = () => {
+  const drawChart = React.useCallback(() => {
     const svg = d3.select(chartRef.current);
 
     // Example: Render a bar chart with month names on the x-axis and a corresponding date range
@@ -25,10 +21,10 @@ const BarChart = ({ data }) => {
       .range([0, data.length * (barWidth + 65)]);
 
     // Y-axis scale for the bar heights
-    const yScale = d3
-      .scaleLinear()
-      .domain([0, d3.max(data, d => d.value)])
-      .range([150, 0]);
+    // const yScale = d3
+    //   .scaleLinear()
+    //   .domain([0, d3.max(data, d => d.value)])
+    //   .range([150, 0]);
 
     // Render bars
     svg
@@ -59,8 +55,10 @@ const BarChart = ({ data }) => {
       .selectAll("text")
       .attr("transform", "rotate(-45)")
       .style("text-anchor", "end");
-  };
-
+  }, [data]);
+  useEffect(() => {
+    drawChart();
+  }, [drawChart]);
   return (
     <svg
       ref={chartRef}
